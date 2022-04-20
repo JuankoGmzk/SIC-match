@@ -1,0 +1,408 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>SIC</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images2/Logo MS.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+      </div>
+      <!-- end loader -->
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div  class="head_top">
+            <div class="header">
+               <div class="container-fluid">
+                  <div class="row">
+                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                        <div class="full">
+                           <div class="center-desk">
+                       
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                        <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                           <span class="navbar-toggler-icon"></span>
+                           </button>
+
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- end header inner -->
+            <!-- end header -->
+            <!-- banner -->
+
+         </div>
+      </header>
+      <!-- end banner -->
+
+      <!-- match -->
+            <br>
+      <div class="tbg mt-0" id="divFirstMatch">
+         
+         <div class="theader">
+           <i class="fa fa-cog" aria-hidden="true"></i>
+           <i class="fa fa-comments" aria-hidden="true"></i>
+           <div class="tlogo">
+             <img src="https://www.mundocuentas.com/wp-content/uploads/2020/08/mundocuentas-match-portada.png" alt="Tinder Logo" title="Tinder Logo"/>
+           </div>
+         </div>
+         <div class="tbgwrap"> 
+            <div class="titlepage pb-0 mt-2" style="text-align: center;">
+               <h1 style="font-size: xx-large;">¡Felidades, <span  id="nombreUsuarioID"></span>!</h1> 
+            </div>
+            <div class="tphoto" style="text-align: center;">
+    
+             <img src="./images2/Logo MS.png" title="tphoto" alt="Tinder Photo" style="width: 85%;"/>
+               
+            </div>
+            
+            <div class="container">
+      
+               <div class="titlepage pb-0 mt-5" style="text-align: center;">
+                  <h1 style="font-size: xx-large; color: #29285c;">¡Hiciste match!</h1> 
+               </div>
+      
+               <div class="row">
+
+               <div class="col xl-12 pl-4">
+                  <a onclick="ocultarDiv();">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/1200px-Heart_coraz%C3%B3n.svg.png" title="tsend" alt="Corazón foto" style="height: 80%;"/></a>
+               </div>
+               <div class="col xl-12">
+                  <a href="index.html">
+                  <img src="https://cdn.goconqr.com/uploads/node/image/85430900/73b8f2cf-9eab-4fb8-8907-1feb560e0ecf.png" title="tRechazar" alt="X Foto" style="height: 90%;" /></a>
+               </div>
+               <br>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <style>
+         /************************
+Tinder Template by Miami
+************************/
+.tbg {
+    height: 720px;
+    width: 400px;
+    background-color: #fff;
+    margin: 0 auto;
+    border: 1px solid #c0c0c0;
+}
+.tbgwrap { padding: 10px; }
+.theader { height: 65px; border-bottom: 1px solid #c0c0c0; }
+.theader i.fa-comments {
+    color: #c0c0c0;
+    font-size: 40px;
+    display: inline-block;
+    float: right;
+    padding: 10px 20px;
+    position: relative;
+}
+.theader i.fa-cog {
+    color: #c0c0c0;
+    font-size: 40px;
+    display: inline-block;
+    float: left;
+    padding: 10px 20px;
+    position: relative;
+}
+.tlogo { width: 100px; margin: 0 auto; padding: 10px; }
+.tlogo img { width: 100px; }
+.tphoto {
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    top: 15px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border: 1px solid #c0c0c0;
+    padding-bottom: 60px;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px #c0c0c0;
+}
+.tphoto img {}
+.tname {
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Helvetica', sans-serif;
+    float: left;
+}
+.tname .age { font-weight: 200; }
+.tinfo { font-family: 'Helvetica', sans-serif; }
+.tinfo .fa-users, .tinfo .fa-book {
+    color: #c0c0c0;
+    float: right;
+    position: relative;
+    font-size: 24px;
+    padding: 12px;
+}
+.tcontrols {}
+.tno {
+    background-color: #fff;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    top: 50px;
+    left: 25px;
+    border: 10px solid #f0f0f0;
+}
+.tno i {
+    color: #ff695b;
+    font-size: 80px;
+    padding: 17px 28px;
+}
+.ti {
+    background-color: #fff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    left: 12px;
+    top: 30px;
+    border: 10px solid #f0f0f0;
+}
+.ti .fa-info {
+    font-size: 23px;
+    padding: 15px 20px;
+    color: #398beb;
+}
+.tyes {
+    background-color: #fff;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    top: 48px;
+    left: 0px;
+    border: 10px solid #f0f0f0;
+}
+.tyes i {
+    color: #5de19c;
+    font-size: 60px;
+    padding: 35px 30px;
+}
+.credit {
+    width: 400px;
+    height: auto;
+    position: relative;
+    top: 60px;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 2px 0px;
+}
+.credit a {
+    font-size: 7px;
+    letter-spacing: 5px;
+    color: #c0c0c0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Helvetica', sans-serif;
+    font-style: italic;
+}
+      </style>
+     <br>
+
+      <div  class="card mx-auto" id="divMatch" style="width: 600px;" >
+         <div class="card-body">
+      
+            <div class="col-md-12 ">
+               <div class="cont mt-0">
+                  <h1 style="font-size: xx-large;"> <strong class="multi" > ¡Hiciste un Match con la SIC!</strong></h1>
+                  <br>
+               </div>
+            </div>
+
+
+            <div class="row">
+               <div class="col xl-12">
+                  <a><img id="imageGenero" src="https://img.freepik.com/foto-gratis/mujer-hermosa-joven-mirando-camara-chica-moda-verano-casual-camiseta-blanca-pantalones-cortos-hembra-positiva-muestra-emociones-faciales-modelo-divertido-aislado-amarillo_158538-15796.jpg?w=2000" title="tsend" alt="Corazón foto" style="height: 80%; border-radius: 50%;"/></a>
+                  <br><br>
+                  <h2 style="text-align: center;" id="nombreUsuario"></h2>
+
+               </div>
+               <div class="col pr-5">
+                  <a><img src="./images2/logosic.png" title="tSic" alt="FotoSIC" style="height: 80%; border-radius: 50%;" /></a>
+                  <br><br>
+                  <span><a onclick="OpenModalImage();" style="text-align: center;"><h2> <strong> <u>Conóceme</u></strong></h2></a></span>
+                  
+               </div>
+            </div>
+      
+            <div class="row mt-3">
+               <div class="col-md-12" style="text-align: center;">
+                  <br><br><br>
+                  <h1 style="font-size: xx-large;  color: #29285c;">Encontraste tu única relación seria de <strong>amigos con derechos... y deberes</strong> </h1>
+               </div>
+            </div>
+         </div>
+       </div>
+
+      <!-- end match -->
+
+      <!--  footer -->
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12 ">
+                     <div class="cont">
+                        <h3> <strong class="multi"> SIC</strong></h3>
+                     </div>
+                  </div>
+                  <div class="col-md-12">
+                     <ul class="social_icon">
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <p>© 2022 Todos los derechos reservados. By <a href=""> JP</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+
+
+
+      
+      <!-- Region de Modals -->
+      <div id="ObjectDetailModal" class="modal" tabindex="-1" role="dialog">
+         <div class="modal-dialog modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+
+               <div class="modal-header modal-header-primary">
+                     <h5 class="modal-title"><b>Detalle SIC</b></h5>
+                     <button type="button" class="close" aria-label="Close" data-dismiss="modal" onclick="CloseModal();">
+                        <span aria-hidden="true">&times;</span>
+                     </button>
+               </div>
+
+               <div class="modal-body">
+                     <div class="card border-left-primary shadow py-2">
+                        <div class="card-body">
+                           <div class="row">
+                                
+                              <a><img src="./images2/Blog1.png"></a>
+
+                           </div>
+                        </div>
+                     </div>
+               </div>
+
+               <div class="modal-footer">
+                     <button type="submit" class="btn btn-secondary" data-dismiss="modal" onclick="CloseModal();">Cerrar</button>
+               </div>
+
+            </div>
+         </div>
+      </div>
+      <!-- Fin de Modals-->
+
+
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+   
+   
+      
+   </body>
+
+   <script>
+
+      document.getElementById("nombreUsuario").innerHTML = localStorage.getItem('nombreTestsss')
+      document.getElementById("nombreUsuarioID").innerHTML = localStorage.getItem('nombreTestsss').split(" ")[0];
+      document.getElementById("divMatch").style.display = "none";
+      if(localStorage.getItem('genero') == "M"){
+         document.getElementById("imageGenero").src = 'https://us.123rf.com/450wm/racorn/racorn1607/racorn160700146/61146943-hombre-joven-con-barba-hermoso-pensativo-mirando-pensativo-a-la-c%C3%A1mara-en-un-su%C3%A9ter-elegante-gris-y-.jpg?ver=6" title="tRechazar" alt="X Foto" style="height: 90%; border-radius: 50%;'
+      }
+      else{
+         document.getElementById("imageGenero").src = 'https://img.freepik.com/foto-gratis/mujer-hermosa-joven-mirando-camara-chica-moda-verano-casual-camiseta-blanca-pantalones-cortos-hembra-positiva-muestra-emociones-faciales-modelo-divertido-aislado-amarillo_158538-15796.jpg?w=2000" style="height: 90%; border-radius: 50%;'
+      }
+
+      function ocultarDiv(){
+         document.getElementById("divFirstMatch").style.display = "none";
+         document.getElementById("divMatch").style.display = "block";
+
+      }
+
+      function OpenModalImage(){
+         $('#ObjectDetailModal').modal('show');
+      }
+
+      function CloseModal(){
+         $('#ObjectDetailModal').modal('hide');
+      }
+   </script>
+   
+</html>
+
